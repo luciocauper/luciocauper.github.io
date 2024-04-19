@@ -1,0 +1,162 @@
+body{
+    text-align: center;
+    display:  grid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    background-color: #E0E5F4;
+    margin: 0pc;
+}
+
+h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    padding-left: 20px;
+}
+.leitura{
+    text-align: left;
+}
+
+ul,li{
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: blueviolet;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+hr{
+    width: 80%;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    border-radius: 50px;
+}
+
+.navbar{
+    display: inline-flex;
+    justify-content: space-between;
+    width: auto;
+    height: 50px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+.navlink{
+    padding-right: 20px;
+    color: white;
+    width: 100%;
+    border-right: 1px solid white;
+}
+.navlink:hover{
+    background-color: rgb(127, 38, 211);
+}
+.curiculum-cont{
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-evenly;
+    align-items: baseline;
+    margin: 10px;
+}
+/* trocar a parte de cima pois esta errada */
+
+.card{
+    /* border: 2px solid rgb(255, 255, 255); */
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgba(232, 232, 232, 0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    height: auto;
+    width: auto;
+    background-color: #E0E5F4;
+}
+.card:hover{
+    background-color: #dadfec;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.card-cont{
+    padding: 15px 30px 15px 30px;
+    margin: 10px 0px 10px 0px;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 200,
+  'opsz' 48,
+}
+
+.icon{
+    height: 50px;
+}
+#fotoufc{
+    margin: 20px;
+    padding: 10px;
+}
+
+#text{
+    margin: bottom 5px; ;
+}
+#sec1{
+    background-color: #e3e9fa;
+}
+#sec2{
+    background-color: #03b1e6;
+}
+#sec3{
+    background-color: rgb(173, 105, 250);
+}
+.grid33{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    justify-content: space-evenly;
+    margin: 20px 20px 0px 20px;
+}
+
+@media screen and (max-width:800px) {
+    #fotoufc{
+        width: 300px;
+    }
+    .navbar{
+        display: grid;
+        grid-template-rows: 4fr;
+        justify-content: center;
+        height: auto;
+    }
+    .navlink{
+        width: 100%;
+        border: none;
+    }
+
+}
+
+@media screen and (max-width:1000px){
+    .curiculum-cont,.grid33{
+        display: block;
+    }
+    #sec1{
+        display: block;
+        align-items: center;
+    }
+}
