@@ -111,8 +111,10 @@ hr{
     height: 50px;
 }
 #fotoufc{
+    width: 300px;
     margin: 20px;
     padding: 10px;
+    border-radius: 50px;
 }
 
 #text{
@@ -120,6 +122,8 @@ hr{
 }
 #sec1{
     background-color: #e3e9fa;
+    display: flex;
+    align-items: center;
 }
 #sec2{
     background-color: #03b1e6;
@@ -132,6 +136,12 @@ hr{
     grid-template-columns: 25% 25% 25%;
     justify-content: space-evenly;
     margin: 20px 20px 0px 20px;
+}
+
+footer{
+    background-color: #1f1f1f;
+    color: white;
+    font-size: 20px;
 }
 
 @media screen and (max-width:800px) {
